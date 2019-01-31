@@ -1,8 +1,5 @@
-Components
+Elements
 ---
-
-
-![](assets/20190131120941.png)
 
 
 **Map**, 
@@ -17,5 +14,15 @@ Components
 **Activities**
 - Checkbox group
 
-Component Tree
+
+![](assets/20190131120941.png)
+
+React Components
 ---
+
+![](assets/20190131120943.png)
+
+Component Tree
+===
+
+![](assets/20190131120942.png)
