@@ -15,8 +15,8 @@
 
 ### [Roadmap](docs/Priorities.md)
 
-- Layouting
-- Creating components
-- Implementing functionalities
+1. Layouting
+2. Creating components
+3. Implementing functionalities
 
 ### [Requirements](docs/Requirements.md)
