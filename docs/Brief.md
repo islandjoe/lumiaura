@@ -31,6 +31,6 @@ Technical Requirements
 -	Stara Snow Plow API
 -	Automated tests
 -	Heroku
--	Map overlay
+-	Map API
 
 ---
