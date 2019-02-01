@@ -2,11 +2,11 @@
 Requirements
 ===
 
-- User is able to set or change _starting_ and _ending_ location through drag-and-drop or through text input.
-- Map can be zoomed in or out.
-- Map can be dragged interactively.
-- User can choose to view 1, 2, or 3 types of activities at the same time.
-- The result must show snowplow job in the last 4 hours by default.
+- [ ] User is able to set or change _starting_ and _ending_ location through drag-and-drop or through text input.
+- [x] Map can be zoomed in or out.
+- [x] Map can be dragged interactively.
+- [ ] User can choose to view 1, 2, or 3 types of activities at the same time.
+- [ ] The result must show snowplow job in the last 4 hours by default.
 
 
 Nice to have
