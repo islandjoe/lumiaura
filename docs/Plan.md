@@ -6,7 +6,7 @@ Elements
  **From Area**, 
  **To Area**,
 **Overlay**
-- Google Maps or Open Street Map API
+- ~~Google Maps or~~ Open Street Map API
 
 **Area Search**
 - Text inputs
