@@ -12,3 +12,9 @@
 - Elements
 - Components (React)
 - Component Tree
+
+### 4. [Roadmap](docs/Priorities.md)
+
+- Layouting
+- Creating components
+- Implementing functionalities
