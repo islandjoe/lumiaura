@@ -1,0 +1,7 @@
+.AreaSearch {
+  width:auto;
+}
+
+input[type=text] {
+  display: block;
+}
