@@ -15,8 +15,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Map center={mapCenter}
-            zoom={zoomLevel}>
+        <Map
+          center={mapCenter}
+            zoom={zoomLevel}
+              ref={m=> {this.leafletMap = m}}>
           <TileLayer attribution={tonerAttrb} url={tonerTiles} />
         </Map>
       </div>
