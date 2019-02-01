@@ -9,7 +9,6 @@ Requirements
 - The result must show snowplow job in the last 4 hours by default.
 
 
-
 Nice to have
 ===
 - User can choose how many hours in the past a snowplow job started or was going on.
