@@ -1,6 +1,9 @@
 # Priority
 
-Produce an MVP within 3 weeks (starting from Jan 28).
+The MVP shall have the following functionalities:
+
+
+![](assets/20190204125619-mvp-functionalities.png)
 
 
 ## Roadmap
