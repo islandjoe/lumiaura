@@ -14,4 +14,4 @@ The MVP shall have the following functionalities:
 
 » [Requirements](Requirements.md)
 
-« [Roadmap & Priorities](Priorities.md)
+« [Plan](Plan.md)

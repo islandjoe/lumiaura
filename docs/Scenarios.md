@@ -21,4 +21,4 @@ Seeing that the streets have been plowed already early in the morning, he decide
 
 » [Plan](Plan.md)
 
-« [Scenario: Car Owner](Scenario.md)
+« [Brief](Brief.md)
