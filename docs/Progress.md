@@ -4,4 +4,4 @@ App Progress
 
 As of Feb 04:
 
-![](assets/20190204185237.gif)
+![](assets/20190204222825.gif)
