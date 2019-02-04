@@ -43,16 +43,8 @@ class App extends Component {
                     onOpen={this.onOpen.bind(this)}
                       onClose={this.onClose.bind(this)}
         >
-           <Tab id="home" header="Home" icon={<FiHome />}>
-            <p>No place like home!</p>
-           </Tab>
-
            <Tab id="search" header="Search" icon={<FiSearch />}>
             <p>The noblest search is the search for excellence!</p>
-           </Tab>
-
-           <Tab id="settings" header="Settings" anchor="bottom" icon={<FiSettings />}>
-            <p>We don't want privacy so much as privacy settings!</p>
            </Tab>
         </Sidebar>
 
