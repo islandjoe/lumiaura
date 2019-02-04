@@ -13,7 +13,7 @@
 - Components (React)
 - Component Tree
 
-### [Roadmap](docs/Priorities.md)
+### [Roadmap & Priorities](docs/Priorities.md) ![](docs/assets/tag-new.png)
 
 1. [x] Layouting
 2. [x] Creating components
