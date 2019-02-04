@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {Map, TileLayer} from  'react-leaflet'
 import {Sidebar, Tab} from 'react-leaflet-sidetabs'
 import { FiHome, FiChevronRight, FiSearch, FiSettings } from 'react-icons/fi'
-// import SearchPanel from './control/SearchPanel'
+import SearchPanel from './control/SearchPanel'
 
 import 'leaflet/dist/leaflet.css'
 import './App.css'
@@ -35,20 +35,26 @@ class App extends Component {
     return (
       <div className="App">
         <Sidebar
-          id="sidebar"
-            position="right"
-              collapsed={this.state.collapsed}
-                closeIcon={<FiChevronRight />}
-                  selected={this.state.selected}
-                    onOpen={this.onOpen.bind(this)}
-                      onClose={this.onClose.bind(this)}
-        >
-           <Tab id="search" header="Search" icon={<FiSearch />}>
-            <p>The noblest search is the search for excellence!</p>
-           </Tab>
+            id="sidebar"
+            position="left"
+            collapsed={this.state.collapsed}
+            closeIcon={<FiChevronRight />}
+            selected={this.state.selected}
+            onOpen={this.onOpen.bind(this)}
+            onClose={this.onClose.bind(this)}>
+          <Tab
+              id="search"
+              header="Search" icon={<FiSearch />}>
+
+            <SearchPanel />
+
+          </Tab>
         </Sidebar>
 
-        <Map className="mapStyle" center={mapCenter} zoom={zoomLevel}>
+        <Map
+            className="mapStyle sidebar-map"
+            center={mapCenter}
+            zoom={zoomLevel}>
           <TileLayer
             attribution={tonerAttrb}
             url={tonerTiles}

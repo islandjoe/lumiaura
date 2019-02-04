@@ -1,0 +1,7 @@
+h1.sidebar-header {
+  background-color: black;
+}
+
+.sidebar-tabs > ul > li.active {
+  background-color: #666;
+}
