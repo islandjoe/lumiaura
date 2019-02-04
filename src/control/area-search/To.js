@@ -3,7 +3,10 @@ import '../../layout/JobTypes.css'
 
 const toLoc =(props)=> {
   return (
-    <input type="text" placeholder="To" />
+    <div className="ui left icon input">
+      <input type="text" placeholder="To..." />
+      <i className="users icon"></i>
+    </div>
   )
 }
 

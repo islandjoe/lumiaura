@@ -4,17 +4,34 @@ import '../../layout/JobTypes.css'
 
 const jobtypes =(props)=> {
   return (
-    <fieldset className="JobTypes">
+    <div className="ui checkbox">
       <label>
-      <input type="checkbox" name="jobtype" value="" /> Roads
-      </label>
+      <input
+        name="road"
+          type="checkbox"
+            className="hidden"
+              readOnly=""
+                tabIndex="0"/>
+      Roads</label>
+
       <label>
-      <input type="checkbox" name="jobtype" value="" /> Bike lanes
+      <input
+        name="cycling"
+        type="checkbox"
+          className="hidden"
+            readOnly=""
+              tabIndex="0"/>
+      Cycling Path</label>
+
       <label>
-      </label>
-      <input type="checkbox" name="jobtype" value="" /> Pedestrian/foot paths
-      </label>
-    </fieldset>
+      <input
+        name="jobtype"
+        type="checkbox"
+          className="hidden"
+            readOnly=""
+              tabIndex="0"/>
+      Pedestrian/Foot Path</label>
+    </div>
   )
 }
 

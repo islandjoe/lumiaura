@@ -3,7 +3,10 @@ import '../../layout/AreaSearch.css'
 
 const fromLoc =(props)=> {
   return (
-    <input type="text" placeholder="From" />
+    <div className="ui left icon input">
+      <input type="text" placeholder="From..." />
+      <i className="users icon"></i>
+    </div>
   )
 }
 
