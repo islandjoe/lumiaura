@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 // import {render} from 'react-dom'
-import {Map, TileLayer} from  'react-leaflet'
+import {Map, TileLayer, Marker} from  'react-leaflet'
 import {Sidebar, Tab} from 'react-leaflet-sidetabs'
 import { FiHome, FiChevronRight, FiSearch, FiSettings } from 'react-icons/fi'
 import SearchPanel from './control/SearchPanel'
+import './App.css'
 
 import 'leaflet/dist/leaflet.css'
-import './App.css'
+import L from 'leaflet';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
 
 const tonerTiles = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png'
 const tonerAttrb = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 const mapCenter = [60.1713, 24.8280]
-const zoomLevel = 12
+const zoomLevel = 14
 
 class App extends Component {
 
@@ -57,8 +66,8 @@ class App extends Component {
             zoom={zoomLevel}>
           <TileLayer
             attribution={tonerAttrb}
-            url={tonerTiles}
-          />
+            url={tonerTiles}/>
+          <Marker position={mapCenter} />
         </Map>
       </div>
     );
