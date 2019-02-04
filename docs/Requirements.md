@@ -21,6 +21,6 @@ Nice to have
 
 ----
 
-» [README](README.md)
+» [README](https://github.com/islandjoe/lumiaura)
 
 « [Roadmap & Priorities](Priorities.md)

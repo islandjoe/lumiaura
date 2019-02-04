@@ -35,6 +35,6 @@ Technical Requirements
 
 ---
 
-» [Scenario: Car Owner](docs/Scenarios.md)
+» [Scenario: Car Owner](Scenarios.md)
 
 « [README](https://github.com/islandjoe/lumiaura)
