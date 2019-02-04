@@ -20,3 +20,6 @@
 3. [ ] Implementing functionalities
 
 ### [Requirements](docs/Requirements.md)
+
+- Basic feature
+- Nice to have

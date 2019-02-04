@@ -18,3 +18,9 @@ Nice to have
 - Be able to change the map view type.
 - Starting location at your current location.
 - Responsive web design
+
+----
+
+» [README](README.md)
+
+« [Roadmap & Priorities](Priorities.md)

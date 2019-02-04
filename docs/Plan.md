@@ -26,3 +26,9 @@ Component Tree
 ===
 
 ![](assets/20190131120942.png)
+
+----
+
+» [Roadmap & Priorities](Priorities.md)
+
+« [Plan](Plan.md)
