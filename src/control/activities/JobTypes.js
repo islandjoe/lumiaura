@@ -9,27 +9,21 @@ const jobtypes =(props)=> {
       <input
         name="road"
           type="checkbox"
-            className="hidden"
-              readOnly=""
-                tabIndex="0"/>
+            tabIndex="1"/>
       Roads</label>
 
       <label>
       <input
         name="cycling"
-        type="checkbox"
-          className="hidden"
-            readOnly=""
-              tabIndex="0"/>
+          type="checkbox"
+              tabIndex="2"/>
       Cycling Path</label>
 
       <label>
       <input
         name="jobtype"
-        type="checkbox"
-          className="hidden"
-            readOnly=""
-              tabIndex="0"/>
+          type="checkbox"
+            tabIndex="3"/>
       Pedestrian/Foot Path</label>
     </div>
   )

@@ -1,13 +1,3 @@
 .SearchPanel {
-  width: auto;
-  background: azure;
-  max-width: 240px;
-  border: 1px solid gray;
-  position: absolute;
-  bottom: 0;
-}
-
-fieldset {
-  display: inline-block;
-  border: none;
+  margin-left: -20px;
 }
