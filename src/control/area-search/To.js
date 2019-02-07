@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../layout/JobTypes.css'
+import '../../layout/JobType.css'
 
 const toLoc =(props)=> {
   return (

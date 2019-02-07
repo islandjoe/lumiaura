@@ -1,9 +1,14 @@
 import React from 'react'
-import JobTypes from './activities/JobTypes'
+import JobType from './activities/JobType'
+import Activities from '../layout/Activities.css'
 
 const activities =(props)=> {
   return (
-    <JobTypes />
+    <div className={Activities}>
+      <JobType type="road" label="Roads"/>
+      <JobType type="cycling" label="Cycling"/>
+      <JobType type="footpath" label="Footpath"/>
+    </div>
   )
 }
 
