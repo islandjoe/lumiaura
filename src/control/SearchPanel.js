@@ -7,7 +7,7 @@ import '../layout/SearchPanel.css'
 const searchpanel =(props)=> {
   return (
     <div className="SearchPanel">
-      <AreaSearch />
+      <AreaSearch home={ props.home } />
       <Activities />
     </div>
   )

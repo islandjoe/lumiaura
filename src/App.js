@@ -27,7 +27,7 @@ class App extends Component {
   state = {
     collapsed: true,
     selected:'home',
-    address: null
+    address: ''
   }
 
   onClose() {
@@ -67,17 +67,17 @@ class App extends Component {
             onClose={this.onClose.bind(this)}>
           <Tab
               id="search"
-              header="Search" icon={<FiSearch />}>
-
-            <SearchPanel />
-
+              header="Search"
+              icon={<FiSearch />}>
+            <SearchPanel home={ this.state.address } />
           </Tab>
         </Sidebar>
 
         <Map
             className="mapStyle sidebar-map"
             center={mapCenter}
-            zoom={zoomLevel}>
+            zoom={zoomLevel}
+            >
           <TileLayer
             attribution={tonerAttrb}
             url={tonerTiles}/>

@@ -4,9 +4,9 @@ import To from './area-search/To'
 
 import '../layout/AreaSearch.css'
 
-const areaSearch =()=> (
+const areaSearch =(props)=> (
   <div className="AreaSearch">
-    <From />
+    <From address={ props.home }/>
     <To />
   </div>
 )
