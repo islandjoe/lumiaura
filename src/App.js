@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import {render} from 'react-dom'
+import axios from 'axios'
 import {Map, TileLayer, Marker} from  'react-leaflet'
 import {Sidebar, Tab} from 'react-leaflet-sidetabs'
 import { FiChevronRight, FiSearch } from 'react-icons/fi'
 import SearchPanel from './control/SearchPanel'
-import './App.css'
 
+import './App.css'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet';
 
@@ -26,7 +26,8 @@ class App extends Component {
 
   state = {
     collapsed: true,
-    selected:'home'
+    selected:'home',
+    address: null
   }
 
   onClose() {
@@ -38,6 +39,19 @@ class App extends Component {
       collapsed: false,
       selected: id,
     })
+  }
+
+  componentDidMount() {
+    axios
+      .get(`https://api.digitransit.fi/geocoding/v1/reverse?point.lat=${mapCenter[0]}&point.lon=${mapCenter[1]}&size=1&layers=address`)
+      .then(response=> {
+        this.setState({
+          address: response['data']['features'][0]['properties']['label']
+        })
+      })
+      .catch (error=> {
+        console.log(error)
+      })
   }
 
   render() {
