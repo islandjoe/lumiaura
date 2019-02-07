@@ -19,7 +19,7 @@
 
 1. [x] Layouting
 2. [x] Creating components
-3. [ ] Implementing functionalities
+3. [x] Implementing functionalities
 
 ### [Requirements](docs/Requirements.md)
 
