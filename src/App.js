@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import {render} from 'react-dom'
 import {Map, TileLayer, Marker} from  'react-leaflet'
 import {Sidebar, Tab} from 'react-leaflet-sidetabs'
-import { FiHome, FiChevronRight, FiSearch, FiSettings } from 'react-icons/fi'
+import { FiChevronRight, FiSearch } from 'react-icons/fi'
 import SearchPanel from './control/SearchPanel'
 import './App.css'
 
