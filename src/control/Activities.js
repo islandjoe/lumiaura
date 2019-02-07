@@ -1,14 +1,14 @@
 import React from 'react'
 import JobType from './activities/JobType'
-import Activities from '../layout/Activities.css'
+import '../layout/Activities.css'
 
 const activities =(props)=> {
   return (
-    <div className={Activities}>
-      <JobType type="road" label="Roads"/>
-      <JobType type="cycling" label="Cycling"/>
-      <JobType type="footpath" label="Footpath"/>
-    </div>
+    <>
+      <JobType type="road" label="Road"/>
+      <JobType type="cycling" label="Bike Lanes"/>
+      <JobType type="footpath" label="Pedestrian/Footpath"/>
+    </>
   )
 }
 
