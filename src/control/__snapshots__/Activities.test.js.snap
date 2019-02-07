@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Activities/> should render 1`] = `
+Array [
+  <label
+    className="JobType ui label"
+  >
+    <input
+      className="ui checkbox"
+      name="road"
+      type="checkbox"
+    />
+    Road
+  </label>,
+  <label
+    className="JobType ui label"
+  >
+    <input
+      className="ui checkbox"
+      name="cycling"
+      type="checkbox"
+    />
+    Bike Lanes
+  </label>,
+  <label
+    className="JobType ui label"
+  >
+    <input
+      className="ui checkbox"
+      name="footpath"
+      type="checkbox"
+    />
+    Pedestrian/Footpath
+  </label>,
+]
+`;

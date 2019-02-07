@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AreaSearch/> should render 1`] = `
+<div
+  className="AreaSearch"
+>
+  <div
+    className="ui input"
+  >
+    <input
+      placeholder="From..."
+      type="text"
+    />
+  </div>
+  <div
+    className="ui input"
+  >
+    <input
+      placeholder="To..."
+      type="text"
+    />
+  </div>
+</div>
+`;
