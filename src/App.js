@@ -20,7 +20,7 @@ L.Icon.Default.mergeOptions({
 const tonerTiles = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png'
 const tonerAttrb = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 const mapCenter = [60.1713, 24.8280]
-const zoomLevel = 14
+const zoomLevel = 12
 
 class App extends Component {
 
@@ -28,7 +28,8 @@ class App extends Component {
     collapsed: true,
     selected:'home',
     address: '',
-    coord: []
+    coordTo: [],
+    showMarkerTo: false
   }
 
   fetchLocn =(event)=> {
@@ -36,12 +37,13 @@ class App extends Component {
       axios
         .get(`https://api.digitransit.fi/geocoding/v1/search?text=${event.target.value}&size=1`)
         .then(response=> {
-
+          let lat, lon
+          [lon, lat] = response['data']['features'][0]['geometry']['coordinates']
           this.setState({
-            coord: response['data']['features'][0]['geometry']['coordinates']
+            coordTo: [lat, lon],
+            showMarkerTo: true
           })
 
-          console.log(this.state.coord)
         })
         .catch (error=> {
           console.log(error)
@@ -74,6 +76,7 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div className="App">
         <Sidebar
@@ -105,14 +108,21 @@ class App extends Component {
         </Sidebar>
 
         <Map
-            className="mapStyle sidebar-map"
+          className="mapStyle sidebar-map"
             center={mapCenter}
-            zoom={zoomLevel}
-            >
+              zoom={zoomLevel}>
           <TileLayer
             attribution={tonerAttrb}
-            url={tonerTiles}/>
+              url={tonerTiles}/>
+
           <Marker position={mapCenter} />
+
+          {
+            this.state.showMarkerTo
+            ? <Marker position={this.state.coordTo} />
+            : null
+          }
+
         </Map>
       </div>
     );
