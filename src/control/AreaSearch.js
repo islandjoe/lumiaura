@@ -7,7 +7,7 @@ import '../layout/AreaSearch.css'
 const areaSearch =(props)=> (
   <div className="AreaSearch">
     <From address={ props.home }/>
-    <To />
+    <To locationTo={ props.locationTo } />
   </div>
 )
 

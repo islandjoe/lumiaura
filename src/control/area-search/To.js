@@ -4,7 +4,10 @@ import '../../layout/JobType.css'
 const toLoc =(props)=> {
   return (
     <div className="ui input">
-      <input type="text" placeholder="To..." />
+      <input
+          type="text"
+          placeholder="To..."
+          onKeyPress={ props.locationTo } />
     </div>
   )
 }

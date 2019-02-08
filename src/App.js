@@ -81,28 +81,20 @@ class App extends Component {
       <div className="App">
         <Sidebar
             id="sidebar"
-            position="left"
-            collapsed={this.state.collapsed}
-            closeIcon={<FiChevronRight />}
-            selected={this.state.selected}
-            onOpen={this.onOpen.bind(this)}
-            onClose={this.onClose.bind(this)}>
+              position="left"
+                collapsed={this.state.collapsed}
+                  closeIcon={<FiChevronRight />}
+                    selected={this.state.selected}
+                      onOpen={this.onOpen.bind(this)}
+                        onClose={this.onClose.bind(this)}>
           <Tab
-              id="search"
+            id="search"
               header="Search"
-              icon={<FiSearch />}>
+                icon={<FiSearch />}>
 
-    <div className="ui input">
-      <input
-          type="text"
-          placeholder="To..."
-          onKeyPress={ this.fetchLocn } />
-
-    </div>
-{/*
-            <SearchPanel
+             <SearchPanel
                 home={ this.state.address }
-                locationTo={ this.fetchLocn } /> */}
+                  locationTo={ this.fetchLocn } />
 
           </Tab>
         </Sidebar>
