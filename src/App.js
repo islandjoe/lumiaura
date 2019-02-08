@@ -27,7 +27,26 @@ class App extends Component {
   state = {
     collapsed: true,
     selected:'home',
-    address: ''
+    address: '',
+    coord: []
+  }
+
+  fetchLocn =(event)=> {
+    if (event.key === 'Enter') {
+      axios
+        .get(`https://api.digitransit.fi/geocoding/v1/search?text=${event.target.value}&size=1`)
+        .then(response=> {
+
+          this.setState({
+            coord: response['data']['features'][0]['geometry']['coordinates']
+          })
+
+          console.log(this.state.coord)
+        })
+        .catch (error=> {
+          console.log(error)
+        })
+    }
   }
 
   onClose() {
@@ -69,7 +88,19 @@ class App extends Component {
               id="search"
               header="Search"
               icon={<FiSearch />}>
-            <SearchPanel home={ this.state.address } />
+
+    <div className="ui input">
+      <input
+          type="text"
+          placeholder="To..."
+          onKeyPress={ this.fetchLocn } />
+
+    </div>
+{/*
+            <SearchPanel
+                home={ this.state.address }
+                locationTo={ this.fetchLocn } /> */}
+
           </Tab>
         </Sidebar>
 
