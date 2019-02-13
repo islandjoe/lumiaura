@@ -5,9 +5,9 @@ import '../layout/Activities.css'
 const activities =(props)=> {
   return (
     <>
-      <JobType type="road" label="Road"/>
-      <JobType type="cycling" label="Bike Lanes"/>
-      <JobType type="footpath" label="Pedestrian/Footpath"/>
+      <JobType selectJob={ props.selectJob  } type="road" label="Road"/>
+      <JobType selectJob={ props.selectJob  }  type="cycling" label="Bike Lanes"/>
+      <JobType selectJob={ props.selectJob  }  type="footpath" label="Pedestrian/Footpath"/>
     </>
   )
 }

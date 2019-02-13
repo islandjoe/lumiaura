@@ -11,7 +11,7 @@ const searchpanel =(props)=> {
         home={ props.home }
           locationTo={ props.locationTo } />
 
-      <Activities />
+      <Activities selectJob={ props.selectJob }/>
     </div>
   )
 }

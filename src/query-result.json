@@ -1,0 +1,143 @@
+[
+  {
+    "id": "399497",
+    "last_location": {
+      "coords": [
+        24.9543263919175,
+        60.2164042318692
+      ],
+      "events": [
+        "hi",
+        "kv"
+      ],
+      "timestamp": "2019-02-11T15:14:43"
+    },
+    "location_history": []
+  },
+  {
+    "id": "399718",
+    "last_location": {
+      "coords": [
+        24.9708757241198,
+        60.1989119497843
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-02-11T15:14:22"
+    },
+    "location_history": []
+  },
+  {
+    "id": "399458",
+    "last_location": {
+      "coords": [
+        24.9714324192602,
+        60.1982764961096
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-02-11T14:20:03"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394216",
+    "last_location": {
+      "coords": [
+        24.9790357195331,
+        60.1929260243533
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:41:45"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394278",
+    "last_location": {
+      "coords": [
+        24.9727725416417,
+        60.2650843399876
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:38:46"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394205",
+    "last_location": {
+      "coords": [
+        24.9606531689666,
+        60.1963057229656
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:37:21"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394207",
+    "last_location": {
+      "coords": [
+        24.9593270064392,
+        60.1956577186457
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:37:13"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394206",
+    "last_location": {
+      "coords": [
+        24.9709520739903,
+        60.1988150456005
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:36:01"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394201",
+    "last_location": {
+      "coords": [
+        24.9521368433835,
+        60.1921901651636
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:35:24"
+    },
+    "location_history": []
+  },
+  {
+    "id": "394300",
+    "last_location": {
+      "coords": [
+        24.9836673412139,
+        60.1457013498864
+      ],
+      "events": [
+        "au"
+      ],
+      "timestamp": "2019-01-30T06:35:19"
+    },
+    "location_history": []
+  }
+]

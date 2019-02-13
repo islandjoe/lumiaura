@@ -9,7 +9,8 @@ const jobtype =(props)=> {
     <input
         className="ui checkbox"
         name={ props.type }
-        type="checkbox"/>
+        type="checkbox"
+        onChange={ props.selectJob }/>
       { props.label  }
   </label>
 
