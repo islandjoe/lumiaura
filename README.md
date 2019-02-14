@@ -19,9 +19,9 @@
 
 1. [x] Layouting
 2. [x] Creating components
-3. [ ] Implementing functionalities
+3. [x] Implementing functionalities
 
 ### [Requirements](docs/Requirements.md)
 
 - Basic feature
-- Nice to have
+- Nice to have 

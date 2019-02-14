@@ -27,7 +27,7 @@ Use Cases
 Technical Requirements
 ===
 
--	ReactJS and GraphQL
+-	ReactJS ~~and GraphQL~~
 -	Stara Snow Plow API
 -	Automated tests
 -	Heroku
