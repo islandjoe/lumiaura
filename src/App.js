@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import {Map, TileLayer, Marker, Polyline, Circle} from  'react-leaflet'
+import {Map, TileLayer, Marker, Polyline} from  'react-leaflet'
 import {Sidebar, Tab} from 'react-leaflet-sidetabs'
 import { FiChevronRight, FiSearch } from 'react-icons/fi'
 import SearchPanel from './control/SearchPanel'
-
-import Mapr from './control/Mapr'
 
 import './App.css'
 import 'leaflet/dist/leaflet.css'
@@ -27,7 +25,7 @@ const plowMarker = L.icon({
 const tonerTiles = 'http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png'
 const tonerAttrb = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 const mapCenter = [60.1713, 24.8280]
-const zoomLevel = 10
+const zoomLevel = 12
 
 class App extends Component {
 
@@ -80,11 +78,6 @@ class App extends Component {
       })
   }
 
-  populateTrails =(coords)=> {
-    return (state, props) => {
-      return { trail: coords, hasTrail: true }
-    }
-  }
   showTrace =(jobtype)=> {
 
     //For each active plow doing a specific job type
@@ -94,43 +87,35 @@ class App extends Component {
         return p.last_location.events.includes(jobtype)
       })
 
-      // console.log(plowWithJobtype)
-
       //  extract their id and
       //  query API server for plow's location history
       const jobsOfType = plowWithJobtype.map(plow=>
         axios.get(`http://dev.hel.fi/aura/v1/snowplow/${plow.id}?history=900&temporal_resolution=60&since=4hours-ago`)
       )
 
-      // console.log('jobsOfType pr: ', jobsOfType)
-
       axios.all(jobsOfType)
-        .then(plows=> { //console.log('response', response)
-        // console.log(plows[0].data.location_history[0])
-          const w = plows.map(arrayOfPlows=>
-            arrayOfPlows.data.location_history
-          )
-          const x = w.map(o=> o)
-          const y = x.map(o=> o.map(p=> p))
-          const z = y.map(o=>
-            o.map(p=> [p.coords[1], p.coords[0]])
-          )
+        .then(plows=> {
+          const location = plows.map(arrayOfPlows=> arrayOfPlows.data.location_history)
+                              .map(plow=> plow)
+                            .map(location=> location.map(history=> history))
+                          .map(locationHistory=> locationHistory.map(p=> [p.coords[1], p.coords[0]]) )
 
-          console.log('z: ', z)
           this.setState(()=>{
             return {
               hasTrail: true,
-              trail: [...this.state.trail, z]
+              trail: [...this.state.trail, location]
             }
           })
         })
         .catch(err=> console.log('catch: ', err))
-
-
-      // const b = coords.map(c=> c)
-      // console.log('b: ', b)
-      //
     }
+  }
+
+  displayOverlay =(e)=> {
+    const color = ['red', 'green', 'yellow']
+    return this.state.trail.map((trail, i)=>
+      <Polyline positions={ trail } key={i+1} color={ color[i] }/>
+    )
   }
 
   onClose() {
@@ -149,7 +134,7 @@ class App extends Component {
       .get(`https://api.digitransit.fi/geocoding/v1/reverse?point.lat=${mapCenter[0]}&point.lon=${mapCenter[1]}&size=1&layers=address`)
       .then(response=> {
         this.setState({
-          address: response['data']['features'][0]['properties']['label']
+          locationFrom: response['data']['features'][0]['properties']['label']
         })
       })
       .catch (error=> {
@@ -209,8 +194,8 @@ class App extends Component {
           }
 
           { this.state.hasTrail
-            ? this.state.trail.map((trail, i)=> <Polyline positions={ trail } key={i} />)
-            : 'Homemm'
+            ? this.displayOverlay()
+            : null
           }
 
         </Map>
