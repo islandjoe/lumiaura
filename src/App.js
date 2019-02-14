@@ -34,7 +34,7 @@ class App extends Component {
   state = {
     collapsed: true,
     selected:'home',
-    address: '',
+    locationFrom: '',
     coordTo: [],
     showMarkerTo: false,
     trail: [],
@@ -148,7 +148,7 @@ class App extends Component {
                 icon={<FiSearch />}>
               <>
              <SearchPanel
-                home={ this.state.address }
+                home={ this.state.locationFrom }
                   locationTo={ this.fetchLocn }
                     selectJob={ this.showTrace } />
               </>
