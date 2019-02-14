@@ -7,8 +7,9 @@ Array [
   >
     <input
       className="ui checkbox"
-      name="road"
+      onChange={[Function]}
       type="checkbox"
+      value="su"
     />
     Road
   </label>,
@@ -17,20 +18,22 @@ Array [
   >
     <input
       className="ui checkbox"
-      name="cycling"
+      onChange={[Function]}
       type="checkbox"
+      value="kv"
     />
-    Bike Lanes
+    Cycling Paths
   </label>,
   <label
     className="JobType ui label"
   >
     <input
       className="ui checkbox"
-      name="footpath"
+      onChange={[Function]}
       type="checkbox"
+      value="hi"
     />
-    Pedestrian/Footpath
+    Pedestrian/Footpaths
   </label>,
 ]
 `;
