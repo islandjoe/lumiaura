@@ -8,10 +8,10 @@ const searchpanel =(props)=> {
   return (
     <div className="SearchPanel">
       <AreaSearch
-        home={ props.home }
-          locationTo={ props.locationTo } />
-
-      <Activities selectJob={ props.selectJob }/>
+          home={ props.home }
+            locationTo={ props.locationTo } />
+      <Activities
+          selectJob={ props.selectJob }/>
     </div>
   )
 }

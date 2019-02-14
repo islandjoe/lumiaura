@@ -3,13 +3,19 @@ import JobType from './activities/JobType'
 import '../layout/Activities.css'
 
 const activities =(props)=> {
-  return (
-    <>
-      <JobType selectJob={ props.selectJob  } type="road" label="Road"/>
-      <JobType selectJob={ props.selectJob  }  type="cycling" label="Bike Lanes"/>
-      <JobType selectJob={ props.selectJob  }  type="footpath" label="Pedestrian/Footpath"/>
-    </>
-  )
+  const jobtypes = [
+    {type: 'su', label: 'Road'},
+    {type: 'kv', label: 'Cycling Paths'},
+    {type: 'hi', label: 'Pedestrian/Footpaths'}
+  ]
+
+  return jobtypes.map(j=> (
+    <JobType
+        key={ j.type }
+          type={ j.type }
+            label={ j.label }
+              selectJob={ props.selectJob } />
+  ))
 }
 
 export default activities
