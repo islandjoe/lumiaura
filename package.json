@@ -30,6 +30,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {},
-  "homepage": "http://islandjoe.github.io/portfolio/reactjs/lumiaura"
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "homepage": "https://islandjoe.github.io/portfolio/reactjs/lumiaura"
 }
