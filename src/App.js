@@ -35,13 +35,13 @@ class App extends Component {
     collapsed: true,
     selected:'home',
     locationFrom: '',
-    coordTo: [],
-    showMarkerTo: false,
-    trail: [],
-    hasTrail: false,
-    plows: [],
-    plowsCoord: [],
-    plowsReady: false
+    coordTo: [],            //The coordinates to the inputted address in the 'To' field
+    showMarkerTo: false,    //The 'To' location's marker
+    trail: [],              //Coordinates to the plows' activity history
+    hasTrail: false,        //`trail` has just been updated with coords values
+    plows: [],              //All the active plows...
+    plowsCoord: [],         //   and their latest respective coordinates
+    plowsReady: false       //`plows` and `plowsCoord` have just been updated with values
   }
 
   fetchLocn =(event)=> {
