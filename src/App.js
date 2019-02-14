@@ -23,7 +23,7 @@ const plowMarker = L.icon({
 })
 
 const tonerTiles = 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png'
-const tonerAttrb = 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+const tonerAttrb = 'Map tiles by <a href="https://stamen.com">Stamen Design</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 const mapCenter = [60.1713, 24.8280]
 const zoomLevel = 12
 
@@ -62,7 +62,7 @@ class App extends Component {
 
   fetchActivities =()=> {
     axios
-      .get('http://dev.hel.fi/aura/v1/snowplow/')
+      .get('https://dev.hel.fi/aura/v1/snowplow/')
       .then(response=> {
           const coords = response.data.map((plow)=> {
             let [lo, la] = plow.last_location.coords
@@ -90,7 +90,7 @@ class App extends Component {
       //  extract their id and
       //  query API server for plow's location history
       const jobsOfType = plowWithJobtype.map(plow=>
-        axios.get(`http://dev.hel.fi/aura/v1/snowplow/${plow.id}?history=900&temporal_resolution=60&since=4hours-ago`)
+        axios.get(`https://dev.hel.fi/aura/v1/snowplow/${plow.id}?history=900&temporal_resolution=60&since=4hours-ago`)
       )
 
       axios.all(jobsOfType)
