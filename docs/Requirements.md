@@ -5,9 +5,9 @@ Requirements
 - [x] Default location is _Keilalahdentie 2-4, 02150 Espoo_.
 - [x] Map can be zoomed in or out.
 - [x] Map can be dragged interactively.
-- [ ] User can choose to view 1, 2, or 3 types of activities at the same time.
-- [ ] The result must show snowplow job in the last 4 hours by default.
-
+- [x] User can choose to view 1, 2, or 3 types of activities at the same time.
+- [x] The result ~~must~~ roughly shows snowplow job in the last 4 hours (by default).
+- [x] On page load, display the location of all active plows. ![](assets/tag-new.png)
 
 Nice to have
 ===

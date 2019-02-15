@@ -24,14 +24,14 @@ Use Cases
 -	[A car owner is about to go to an appointment. Should he take the risk by taking the car or commute instead?](Scenarios.md)
 -	A kindergarten group is about to go out on a field trip to a leikkipuisto. Which way should they go so that it's safe for the children?
 
-Technical Requirements
+Technical Requirements ![Feb 14, 2019](assets/tag-new.png)
 ===
 
 -	ReactJS ~~and GraphQL~~
 -	Stara Snow Plow API
--	Automated tests
--	Heroku
--	Map API
+-	Automated tests (Jest and React Test Renderer)
+-	~~Heroku~~ _Hosted on Github pages instead_
+-	Map API (LeafletJS)
 
 ---
 
