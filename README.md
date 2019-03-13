@@ -1,4 +1,4 @@
-The app is deployed at https://islandjoe.github.io/portfolio/reactjs/lumiaura/.
+The app is deployed at https://compendium.xyz/portfolio/lumiaura/.
 
 
 ### [App Progress](docs/Progress.md) ![](docs/assets/tag-new.png)
