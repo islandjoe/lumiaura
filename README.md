@@ -16,3 +16,6 @@ https://compendium.xyz/portfolio/lumiaura
 
 - Basic feature
 - Nice to have 
+
+**Keywords:**
+- ReactJS, axios, LeafletJS, enzyme, OpenStreetMap.org, Helsinki City Open Data (www.hsl.fi/en/opendata)
