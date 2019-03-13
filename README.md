@@ -1,4 +1,4 @@
-![](assets/19-02-14213348.gif)
+![](docs/assets/19-02-14213348.gif)
 
 https://compendium.xyz/portfolio/lumiaura
 
