@@ -1,3 +1,5 @@
+Inspired by the heavy snow condition in Helsinki on Feb 2019. This React app shows where the city's snowplows are currently plowing and what kind of "plowing" they're doing (e.g., plowing the streets, bike lanes, pedestrian paths, etc.).
+
 ![](docs/assets/19-02-14213348.gif)
 
 https://compendium.xyz/portfolio/lumiaura
