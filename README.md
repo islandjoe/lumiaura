@@ -1,5 +1,6 @@
-The app is deployed at https://compendium.xyz/portfolio/lumiaura/.
+![](assets/19-02-14213348.gif)
 
+https://compendium.xyz/portfolio/lumiaura
 
 ### [Brief](docs/Brief.md)
 - Service
