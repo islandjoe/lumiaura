@@ -2,7 +2,7 @@ Inspired by the heavy snow condition in Helsinki on Feb 2019. This React app sho
 
 ![](docs/assets/19-02-14213348.gif)
 
-https://compendium.xyz/portfolio/lumiaura
+https://mm.compendium.xyz/portfolio/lumiaura
 
 ### [Brief](docs/Brief.md)
 - Service
