@@ -1,8 +1,6 @@
 
 Requirements
 ===
-
-- [x] Default location is ~~Keilalahdentie, Espoo~~.
 - [x] Map can be zoomed in or out.
 - [x] Map can be dragged interactively.
 - [x] User can choose to view 1, 2, or 3 types of activities at the same time.
